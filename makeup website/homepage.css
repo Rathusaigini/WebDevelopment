@@ -1,0 +1,74 @@
+/* Hero Section Styles */
+.hero-section{
+    background-image: url(img/bg13.webp);
+    padding: 100px;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section > .top-heading{
+    text-align: center;
+    background-color: transparent;
+    width: 250px;
+    color: #cbcbcb;
+}    
+
+.hero-section > .bottom-heading{
+    text-align: center;
+    background-color: transparent;
+    color:  #ffffff;
+    width: 250px;   
+}
+
+/* features section style */
+.features-section{
+    background-image: url(img/R.jpeg);
+    filter: brightness(80%);
+    border-top: 5px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.features-section > .column-wrapper{
+    width: 2000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-section > .column-wrapper >.column{
+    padding: 60px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.features-section > .column-wrapper >.column:hover{
+    border-bottom: 5px solid #b5ac90c9;
+}
+
+.features-section > .column-wrapper >.column :nth-child(1){
+    font-size: 3em;
+}
+
+.features-section > .column-wrapper >.column :nth-child(2){
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 50px;
+    transition: 1s;
+}
+
+.features-section > .column-wrapper >.column :nth-child(2):hover{
+    letter-spacing: 1px;
+}
+
+.features-section > .column-wrapper >.column :nth-child(3){
+   letter-spacing: 2px;
+}
