@@ -1,0 +1,78 @@
+/* Hero Section Styles */
+.hero-section{
+    background-image: url(../images/background_img/parallyx\ img_3.jpg);
+    padding: 100px;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section > .top-heading{
+    text-align: center;
+    background-color: transparent;
+    width: 250px;
+}    
+
+
+.hero-section > .bottom-heading{
+    text-align: center;
+    background-color: transparent;
+    color:  #5c8a8a;
+    width: 250px;   
+}
+
+/* feature section styles */
+.features-section{
+    background-image: url(../images/background_img/multiple-bg-4.jpeg);
+    background-color: #ecf9f2;
+    height:  400px;
+    background-size: 400px;
+    background-repeat: repeat-x;
+    border-top: 10px solid #d9d9d9;
+    color: #1e2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu Condensed", sans-serif;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.features-section> .columns-wraper{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-section> .columns-wraper> .columns{
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-radius: 15px ;
+    transition: 1s;
+}
+
+.features-section> .columns-wraper> .columns:hover{
+    border-bottom: 5px solid #1e2f2f;
+}
+
+.features-section> .columns-wraper> .columns :nth-child(1){
+    font-size: 3em;
+}
+
+.features-section> .columns-wraper> .columns :nth-child(2){
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 50px;
+    transition: 1s;
+}
+
+.features-section> .columns-wraper> .columns :nth-child(2):hover{
+    letter-spacing: 1px;
+}
+
+.features-section> .columns-wraper> .columns :nth-child(3){
+    letter-spacing: 2px;
+}
