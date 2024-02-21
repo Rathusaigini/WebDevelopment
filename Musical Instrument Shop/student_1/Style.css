@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./img/head.png');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 6rem;
+  font-style: sans-serif;
+  color: #99003d;
+
+  margin: 20px;
+  text-align: left;
+  text-shadow: 35px 35px 30px #0e084c;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translateY(-50%);
+  }
+
+p {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  bottom: 40%;
+  left: 0;
+  font-size: 3rem;
+  background: linear-gradient(to right, #b00382, #05c4ee);
+  color: #030c3c;
+  text-shadow: 35px 35px 30px #ffffff;
+  margin-bottom: 1rem;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+li {
+  font-size: 2.3rem;
+  font-style: italic;
+  color: #000000;
+  left: 0;
+  
+
+  text-shadow: 30px 30px 15px #000000;
+  background-image: linear-gradient(to bottom left, #97037e,#ffffff,#002266);
+  margin-bottom: 0.5rem;
+}

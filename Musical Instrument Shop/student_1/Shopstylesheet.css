@@ -1,0 +1,114 @@
+body{
+	background-image: url(img/Shop_BG.jpeg.jpg );
+	color: rgb(63, 59, 59);
+}
+h1{
+  color: rgb(232, 208, 208);
+}
+
+h2{
+	font-size: 30px;
+}
+.I1,.I2,.I3,.I4,.I5,.I6{
+	  padding-top:  20px;
+    margin: auto;
+	  font-family: 'Times New Roman', Times, serif, sans-serif;     
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient( #ffffff, #000000);
+	  height:250px;
+	  width:50%;
+    top: 0%;
+    
+}
+.storeWelcoming{
+	font-family: Corbel, Calbri, sans-serif;
+	font-size:45px;
+	
+	background-color:rgba(255, 248, 248, 0.5);
+	color:rgb(218, 129, 129);
+	right: 2%;
+  top:65px;
+  text-align: center;
+	
+	
+  
+	
+	
+}
+
+
+.placeOrder{
+	width:80%;
+	margin:auto;
+	height:60px;
+}
+.item_description{
+	float:right;
+	padding-top:50px;
+}
+.item_pic{
+	float:left;
+}
+.placeOrderButtonLayout{
+	float:right;
+}
+
+input[type=submit]{
+  background-color: #00b8e6;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3e8e41;
+}
+
+input[type=reset]{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #b30000;
+}
+
+#details{
+  
+  width:25%;
+  margin: auto;
+  font-family: Corbel, Calbri, sans-serif;      
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  left: 50%;
+  background: linear-gradient( rgba(0,0,0,0.5), #ffffff,rgba(0,0,0,0.5));
+  background-position: center;
+  background-size:400px 400px;
+  top:auto;
+  border-radius: 25px;
+ 
+}
+
+#fline{
+	text-align: right;
+}
+
+.addingto{
+	background-color: #ffffff8d;
+}
+	

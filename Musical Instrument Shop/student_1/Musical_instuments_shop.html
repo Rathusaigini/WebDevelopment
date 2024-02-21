@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Sets the character encoding for the webpage-->
+		<meta charset= "UTF-8">
+		<title>Musical Shop-Alllegro Presentation_Page</title>
+		
+<!--Links to the CSS file for the webpage-->
+
+		<link rel="stylesheet" type="text/css" href="Shopstylesheet.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css">	
+	</head>
+	<body id="body_content">
+		<!--Displays the navigation bar for the webpage-->
+			<div class="navBar-primary">
+				
+					<div>
+						<a href="Home.html"  >
+							<img  class="navBtn-logo" src="img/logo/SLmaps.png" alt="logo" width=60>
+						</a>
+					</div>
+	
+					<ul class="navUl">
+						<li class="navBtn"><a href="Home.html" >Home</a></li>
+						<li class="navBtn"><a href="#">Gallery</a></li>
+						<li class="navBtn"><a href="#" class="active" >Buy Products</a></li>
+						<li class="navBtn"><a href="#">Quiz</a></li>
+						<li class="navBtn"><a href="#">Student Details</a></li>
+						<li class="navBtn"><a href="Query.html">Query Form</a></li>
+					</ul>
+			   
+			</div>
+	<!--Displays a welcoming message to the user-->
+			
+			<div class="storeWelcoming">
+				<h1>| Welcome to shop Allegro |</h1>
+			</div>
+		
+		<!--Displays a welcoming message to the user-->
+		<form name="MyForm" onsubmit="return validateForm()">
+			
+			<!--Input boxes for the user's personal details-->
+			<div id="details">
+				<table>
+					<tr>
+						<td><label for="name"> <b>Full Name  :</b> </label><br><br></td>
+						<td><input type="text" id="name" name="fullname" style="color:black"><br><br></td>
+					</tr>
+					<tr>
+						<td><label for="email"><b> E-mail  :</b></label><br><br></td>
+						<td><input type="email" id="email" name="Email" style="color:black"><br><br></td>
+					</tr>
+					<tr>
+						<td><label for="address"> <b>Address  :</b> </label><br><br></td>
+						<td><input type="text" id="address" name="Address" style="color:black"><br><br></td>
+					</tr>
+					<tr>					
+						<td><label for="mnumber"><b> Mobile Number :</b> </label><br><br></td>
+						<td><input type="text" id="mnumber" name="Mnumber" style="color:black"><br><br></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			
+			<!--Displays the available products for the user to buy-->
+            <div class="store_outline">
+			<div class="I1">
+				<div class="item_pic">
+					<img class="imgP" alt="Violin" src='./img/violin2.jpg' width="120" height="120">
+					<h2>VIOLIN </h2>
+				</div>
+				<div class="item_description">
+					<b> Rs 10,500.00 </b><br>
+					+ Free Delivery<br>
+					Product Quantity You Want:
+					<input id="product1" type="number" name="PQuantity" min="0" style="color:black">
+					<br/>
+					<button class="addingto" type="button" onclick="shopedProduct1()"> Add To My cart </button>
+				</div>
+			</div>
+			<br><br>
+
+			<div class="I2">
+				<div class="item_pic">
+					<img class="imgP" alt="Drum Set" src='./img/drums.jpg' width="120" height="120">
+					<h2>DRUM SET</h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 20,500.00 </b><br/>
+					+ Free Delivery<br>
+					Product Quantity You Want:
+					<input id="product2" type="number" name="PQuantity" min="0" style="color:black">
+					<br/>
+					<button class="addingto" type="button" onclick="shopedProduct2()"> Add To My cart </button>
+				</div>
+			</div>
+			<br>
+
+			<div class="I3">
+				<div class="item_pic">
+					<img class="imgP" alt="Accordion" src='./img/accordion.jpg' width="120" height="120" >
+					<h2>ACCORDION</h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 10,000.00 </b><br/>
+					+ Free Delivery<br>
+					Product Quantity You Want:
+					<input id="product3" type="number" name="PQuantity" min="0" style="color:black">
+					<br/>
+					<button class="addingto" type="button" onclick="shopedProduct3()"> Add To My cart </button>
+				</div>
+			</div>
+			<br>
+
+			<div class="I4">
+				<div class="item_pic">
+					<img class="imgP" alt="Guitar" src='./img/Guitar.jpg' width="120" height="120">
+					<h2>GUITAR</h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 8000.00 </b><br/>
+					+ Free Delivery<br>
+					Product Quantity You Want:
+					<input id="product4" type="number" name="PQuantity" min="0" style="color:black">
+					<br/>
+					<button class="addingto" type="button" onclick="shopedProduct4()"> Add To My cart </button>
+				</div>
+			</div>
+			<br>
+
+			<div class="I5">
+				<div class="item_pic">
+					<img class="imgP" alt="Piano" src='./img/piano.jpg' width="120" height="120">
+					<h2> PIANO </h2>
+				</div>
+				<div class="item_description">
+					<b>Rs 13000.00 </b><br/>
+					+ Free Delivery<br>
+					Product Quantity You Want:
+					<input id="product5" type="number" name="PQuantity" min="0" style="color:black">
+					<br/>
+					<button class="addingto" type="button" onclick="shopedProduct5()"> Add To My cart </button>
+				</div>
+			</div>
+			<br>
+		
+			<div class="I6">
+				<div class="item_pic">
+					<img class="imgP"  alt="Keyboard" src='./img/keyboard.jpg' width="120" height="120">
+					<h2> KEYBOARD </h2>
+				</div>
+				<div class="item_description">
+					<b> Rs 10500.00 </b><br/>
+					+ Free Delivery<br>
+					Product Quantity You Want:
+					<input id="product6" type="number" name="PQuantity" min="0" style="color:black">
+					<br/>
+					<button class="addingto" type="button" onclick="shopedProduct6()"> Add To My cart </button>
+				</div>
+			</div>
+           <div class="placeOrder">
+				<div class="placeOrderButtonLayout">
+					<input type="submit" value="Place Your Order" class="purchase">
+					<input type="reset" value="Reset" class="reset">
+				</div>
+			</div>
+			</div>
+			<br>
+
+		</form>
+		
+	 
+	  <script src="JS/Script.js"></script>
+	  
+	<div class="footer">
+		<br>
+			<br>
+			<a href= "PageEditor.html" style="color: white;" >Page Editor</a>
+			
+		<div class="footer">
+
+			<a class="footer-container" href="sitemap.html">
+				Site Map
+			</a>
+
+		<div class="footer-container">
+				 &copy; 2023 All Rights Reserved
+		</div>
+			<a class="footer-container" >
+				Editor - Rathusaigini Thavarajah
+			</a>
+		</div>
+
+		<script type="text/javascript" src="JS/Script.js"></script>
+		
+
+
+	
+
+		<br>
+		<br>
+	  </div>	
+    </body>
+</html>
